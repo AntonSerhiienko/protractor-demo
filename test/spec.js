@@ -3,6 +3,7 @@ describe('slow calculator', function() {
     browser.get('http://localhost:3456');
   });
 
+  
   it('should add numbers', function() {
     element(by.model('first')).sendKeys(4);
     element(by.model('second')).sendKeys(5);
@@ -46,4 +47,12 @@ describe('slow calculator', function() {
       });
     });
   });
+
+  /*afterEach(function() {
+    browser.manage().logs().get('browser').then(function(browserLog) {
+        console.log(browserLog)
+        expect(browserLog.length).toEqual(0,"Errors in browser console");
+    });
+  });*/
+  
 });

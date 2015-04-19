@@ -1,9 +1,10 @@
 // Tests for the calculator.
 exports.config = {
-  directConnet: true,
-
+  
+  directConnet: false,
+  seleniumAddress : "http://localhost:4444/wd/hub",
   specs: [
-    'spec.js'
+    '../spec_withPage.js'
   ],
 
   capabilities: {

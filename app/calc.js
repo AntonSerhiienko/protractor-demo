@@ -47,6 +47,7 @@ var CalcCtrl = function($timeout, $scope) {
       } else {
         $scope.latest += '. ';
         times--;
+        console.log("ticking")
         $timeout(tickslowly, 300);
       }
     }, 300)
